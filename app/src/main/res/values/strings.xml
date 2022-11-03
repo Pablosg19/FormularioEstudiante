@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FormularioEstudiante</string>
+    <string name="texto_lista_cursos">Seleccione el curso</string>
+    <string-array name="cursos">
+        <item>1º DAM</item>
+        <item>2º DAM</item>
+        <item>1º SMR</item>
+        <item>2º SMR</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
