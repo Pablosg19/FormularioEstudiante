@@ -1,9 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ly_horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
     tools:context=".BaseDatosActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/img_Estudiante"
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        app:srcCompat="@drawable/estudiante" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ly_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_dni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#FAD978"
+                android:padding="16dp"
+                android:text="DNI: "
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txt_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#FAD978"
+                android:padding="16dp"
+                android:text="Nombre: "
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txt_curso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#FAD978"
+                android:padding="16dp"
+                android:text="Curso:"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txt_fechaNacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#FAD978"
+                android:padding="16dp"
+                android:text="Fecha:"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txt_horaVisita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#FAD978"
+                android:padding="16dp"
+                android:text="Hora:"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
